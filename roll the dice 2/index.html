@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roll the Dice</title>
+  </head>
+  <link href="style.css" rel="stylesheet" />
+  <body>
+    <h1>ROLL THE DICE GAME!🎲</h1>
+    <h2 class="winner-message hidden">Player-X Wins</h2>
+
+    <main>
+      <section class="player player0 player-active">
+        <input type="text" class="name" id="player0-name" value="Player 1" />
+        <!-- new change -->
+        <!-- <p class="saved-score" id="saved-score0">Saved</p> -->
+        <p class="score" id="score0">4</p>
+        <div class="current">
+          <p class="player-current">Current</p>
+          <p class="current-score" id="current0">0</p>
+        </div>
+      </section>
+
+      <section class="player player1">
+        <input type="text" class="name" id="player1-name" value="Player 2" />
+        <!-- <p class="saved-score" id="saved-score1">Saved</p> -->
+        <p class="score" id="score1">0</p>
+        <div class="current">
+          <p class="player-current">Current</p>
+          <p class="current-score" id="current1">0</p>
+        </div>
+      </section>
+
+      <img src="dice1.png" alt="dice" class="dice" />
+      <button class="btn" id="resetbtn">Reset</button>
+      <button class="btn" id="rollbtn">Roll Dice</button>
+      <button class="btn" id="savebtn">Save Score</button>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
